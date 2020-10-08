@@ -1,0 +1,1 @@
+// const swiper = require('swiper');
