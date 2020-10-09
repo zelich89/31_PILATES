@@ -1,0 +1,10 @@
+h1, .h1 {
+  @include font(44px, 48px);
+  @media (max-width: $desktop-width) {
+    @include font(36px, 40px);
+  }
+  @media (max-width: $tablet-width) {
+    @include font(30px, 45px);
+  }
+}
+

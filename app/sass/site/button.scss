@@ -1,0 +1,28 @@
+.button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: $white;
+  cursor: pointer;
+  @include font(14px, 18px);
+  &__arrow:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%,-50%);
+    background: url("../../images/button-arrow.png") no-repeat center right;
+    width: 72px;
+    height: 12px;
+    @media (max-width: $desktop-width) {
+      width: 40px;
+    }
+  }
+  &--bdrs {
+    border: 2px solid #fff;
+    border-radius: 50px;
+  }
+  &--text-green {
+    color: #2a4f37;
+  }
+}

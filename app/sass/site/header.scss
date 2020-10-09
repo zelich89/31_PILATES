@@ -1,0 +1,53 @@
+.header {
+  &__warps {
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &--indent {
+      padding: 30px 0;
+      @media (min-width: $desktop-width) {
+        padding: 20px 0;
+      }
+      @media (max-width: $tablet-width) {
+        padding: 15px 0;
+      }
+    }
+  }
+  &__burger {
+    //color: $white;
+    color: black;
+    cursor: pointer;
+    .svg {
+      @include square-size(20px);
+    }
+  }
+  &__text {
+    font-weight: bold;
+    @include font(14px, 18px);
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &--circle:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 13%;
+    z-index: -3;
+    background-size: cover;
+    height: 785px;
+    background:  url(../../images/circle.png) no-repeat left -5px;
+    @media (max-width: $desktop-width ) {
+      height: 500px;
+    }
+    @media (max-width: $tablet-width) {
+      right: 0;
+      height: 375px;
+    }
+  }
+}
