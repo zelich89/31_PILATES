@@ -16,8 +16,8 @@
     }
   }
   &__burger {
-    //color: $white;
-    color: black;
+    color: $white;
+    //color: black;
     cursor: pointer;
     .svg {
       @include square-size(20px);
