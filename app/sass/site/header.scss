@@ -2,6 +2,7 @@
   &__warps {
   }
   &__content {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -12,6 +13,26 @@
       }
       @media (max-width: $tablet-width) {
         padding: 15px 0;
+      }
+    }
+    &--circle:after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin-left: -100px;
+      z-index: -3;
+      background-size: cover;
+      height: 785px;
+      background:  url(../../images/circle.png) no-repeat left -5px;
+      @media (max-width: $desktop-width ) {
+        //height: 500px;
+      }
+      @media (max-width: $tablet-width) {
+        //right: 0;
+        //height: 375px;
       }
     }
   }
@@ -31,23 +52,4 @@
     }
   }
 
-  &--circle:after {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 13%;
-    z-index: -3;
-    background-size: cover;
-    height: 785px;
-    background:  url(../../images/circle.png) no-repeat left -5px;
-    @media (max-width: $desktop-width ) {
-      height: 500px;
-    }
-    @media (max-width: $tablet-width) {
-      right: 0;
-      height: 375px;
-    }
-  }
 }
