@@ -1,54 +1,67 @@
 .main-sect {
-
-  &__content {
+  &__container {
+  }
+  &__wrap {
+    display: flex;
     position: relative;
+  }
+  &__content {
     &--indent {
-      padding: 100px 0;
+      padding: 130px 0 250px;
+      //padding-bottom: 120px;
+      @media (max-width: $desktop-width) {
+        padding: 100px 0 75px;
+      }
+      @media (max-width: $tablet-width) {
+        padding: 80px 0 90px;
+      }
     }
   }
-
   &__title {
     color: $white;
-    font-weight: lighter;
-    &--indent {
-      padding-bottom: 40px;
-      @media (max-width: $desktop-width) {
-        padding-bottom: 50px;
-      }
-      @media (max-width: $mobile-width) {
-        padding-bottom: 10px;
-      }
+    text-transform: uppercase;
+    @include font-Roboto(58px, 72px, lighter);
+    letter-spacing: 8px;
+    @media (max-width: $desktop-width) {
+      @include font-Roboto(48px, 62px, lighter);
     }
-  }
+    @media (max-width: $tablet-width) {
+      @include font-Roboto(30px, 42px, lighter);
+    }
+   }
   &__text {
-    font-weight: normal;
-    @include font(14px, 18px);
+    @include font-SFUI(18px, 30px, 300);
     color: $white;
-    @media (max-width: $mobile-width) {
+    @media (max-width: $tablet-width) {
       display: none;
     }
     &--indent {
       padding-bottom: 50px;
     }
   }
-  &__button {
-    padding: 20px 50px;
+
+  &__photo-wrapper {
+    pointer-events: none;
+    position: absolute;
+    top: -40px;
+    right: -100px;
+    @media (max-width: $desktop-width) {
+      top: 0;
+      right: 0;
+    }
+    @media (max-width: $tablet-width) {
+      top: 100px;
+      right: -60px;
+    }
   }
   &__photo {
-    position: absolute;
-    z-index: -1;
-    top: -15%;
-    right: -6%;
+    height: 776px;
     @media (max-width: $desktop-width) {
-      right: auto;
-      top: -10%;
-      left: 30%;
+      height: 630px;
     }
-    @media (max-width: $mobile-width) {
-      top: 50%;
-      width: 260px;
-      transform: scale(-1, 1) translateX(25%);
-      display: none;
+    @media (max-width: $tablet-width) {
+      transform: scale(-1, 1);
+      height: 318px;
     }
   }
 }

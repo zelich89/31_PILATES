@@ -1,0 +1,3 @@
+@mixin font($font-size: $font-size, $line-height: $line-height, $font-weight: null){
+  font: #{$font-size}/#{$line-height}  sans-serif;
+}
