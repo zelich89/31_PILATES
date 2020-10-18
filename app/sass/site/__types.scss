@@ -48,6 +48,7 @@ h1, .h1 {
   font-weight: 700;
   font-style: italic;
 }*/
+/*
 
 @font-face {
   font-family: 'Proxima Nova';
@@ -88,7 +89,45 @@ h1, .h1 {
   font-weight: 700;
   font-style: normal;
 }
+*/
+
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../..fonts/SF-UI-Text-Bold.eot');
+  src: local('☺'), url('../..fonts/SF-UI-Text-Bold.woff') format('woff'), url('../..fonts/SF-UI-Text-Bold.ttf') format('truetype'), url('../..fonts/SF-UI-Text-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../..fonts/SF-UI-Text-Semibold.eot');
+  src: local('☺'), url('../..fonts/SF-UI-Text-Semibold.woff') format('woff'), url('../..fonts/SF-UI-Text-Semibold.ttf') format('truetype'), url('../..fonts/SF-UI-Text-Semibold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../..fonts/SF-UI-Text-Medium.eot');
+  src: local('☺'), url('../..fonts/SF-UI-Text-Medium.woff') format('woff'), url('../..fonts/SF-UI-Text-Medium.ttf') format('truetype'), url('../..fonts/SF-UI-Text-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
 
 
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../..fonts/SF-UI-Text-Regular.eot');
+  src: local('☺'), url('../..fonts/SF-UI-Text-Regular.woff') format('woff'), url('../..fonts/SF-UI-Text-Regular.ttf') format('truetype'), url('../..fonts/SF-UI-Text-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
 
-
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../..fonts/SF-UI-Text-Light.eot');
+  src: local('☺'), url('../..fonts/SF-UI-Text-Light.woff') format('woff'), url('../..fonts/SF-UI-Text-Light.ttf') format('truetype'), url('../..fonts/SF-UI-Text-Light.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}

@@ -4,6 +4,15 @@
 
   &__wrap {
     position: relative;
+    &--indent {
+      padding-top: 100px;
+      @media (max-width: $desktop-width) {
+        padding-top: 40px;
+      }
+      @media (max-width: $tablet-width) {
+        padding-bottom: 25px;
+      }
+    }
   }
 
   &__title {
@@ -16,7 +25,7 @@
       }
       @media (max-width: $tablet-width) {
         margin-bottom: 25px;
-      }
+    }
     }
   }
 

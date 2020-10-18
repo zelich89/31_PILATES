@@ -1,4 +1,7 @@
 .main-sect {
+  @media (max-width: $tablet-width) {
+    overflow-x: hidden;
+  }
   &__container {
   }
   &__wrap {
@@ -7,14 +10,14 @@
   }
   &__content {
     &--indent {
-      padding: 130px 0 250px;
+      padding: 130px 0 200px;
       //padding-bottom: 120px;
       @media (max-width: $desktop-width) {
-        padding: 100px 0 75px;
+        padding: 80px 0 190px;
       }
-      @media (max-width: $tablet-width) {
-        padding: 80px 0 90px;
-      }
+/*      @media (max-width: $tablet-width) {
+        padding: 80px 0 190px;
+      }*/
     }
   }
   &__title {

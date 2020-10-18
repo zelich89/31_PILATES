@@ -3,9 +3,9 @@
 }
 
 @mixin font-SFUI($font-size: $font-size, $line-height: $line-height, $font-weight: null){
-  font: #{$font-weight} #{$font-size}/#{$line-height} 'SFUIText';
+  font: #{$font-weight} #{$font-size}/#{$line-height} 'SFUIText', sans-serif;
 }
 
 @mixin font-Roboto($font-size: $font-size, $line-height: $line-height, $font-weight: null){
-  font: #{$font-weight} #{$font-size}/#{$line-height} 'Roboto';
+  font: #{$font-weight} #{$font-size}/#{$line-height} 'Roboto', sans-serif;
 }

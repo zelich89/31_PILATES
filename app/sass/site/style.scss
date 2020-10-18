@@ -1,0 +1,26 @@
+.box {
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 30px;
+  font-family: 'SFUIText', sans-serif;
+  //font-family: 'Roboto', sans-serif;
+  &__1 {
+    font-weight: 300;
+  }
+  &__2 {
+    font-weight: 400;
+  }
+  &__3 {
+    font-weight: 500;
+  }
+  &__4 {
+    font-weight: 600;
+  }
+  &__5 {
+    font-weight: 700;
+  }
+  & * {
+    padding-bottom: 15px;
+  }
+}
+
