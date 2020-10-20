@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'SF UI Text Bold';
+	src: url('../fonts/sf_ui_text_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/sf_ui_text_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/sf_ui_text_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/sf_ui_text_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/sf_ui_text_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/sf_ui_text_bold.svg#sf_ui_text_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
