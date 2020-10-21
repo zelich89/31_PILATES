@@ -1,14 +1,14 @@
 //@import "bs/variables";
-@import "site/__types-NEW";
 @import "site/variables";
+@import "site/mixins/mixins";
+@import "site/_types";
+//@import "site/__types-NEW";
 @import "site/style";
 
-@import "site/mixins/mixins";
 
 @import "site/nullstyle";
 @import "site/extended";
 @import "site/button";
-//@import "site/_types";
 
 @import "site/header";
 @import "site/main-sect";

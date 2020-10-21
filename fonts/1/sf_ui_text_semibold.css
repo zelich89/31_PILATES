@@ -1,9 +1,0 @@
-@font-face {
-	font-family: 'SF UI Text Semibold';
-	src: url('../fonts/sf_ui_text_semibold.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/sf_ui_text_semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/sf_ui_text_semibold.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/sf_ui_text_semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/sf_ui_text_semibold.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/sf_ui_text_semibold.svg#sf_ui_text_semibold') format('svg'); /* Chrome < 4, Legacy iOS */
-}

@@ -90,6 +90,7 @@ h1, .h1 {
   font-style: normal;
 }
 */
+/*
 
 @font-face {
   font-family: 'SFUIText';
@@ -131,3 +132,45 @@ h1, .h1 {
   font-weight: 300;
   font-style: normal;
 }
+*/
+
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../../fonts/SFUIText-Light.eot');
+  src: local('☺'), url('../../fonts/SFUIText-Light.woff') format('woff'), url('../../fonts/SFUIText-Light.ttf') format('truetype'), url('../../fonts/SFUIText-Light.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../../fonts/SFUIText-Regular.eot');
+  src: local('☺'), url('../../fonts/SFUIText-Regular.woff') format('woff'), url('../../fonts/SFUIText-Regular.ttf') format('truetype'), url('../../fonts/SFUIText-Regular.svg') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../../fonts/SFUIText-Medium.eot');
+  src: local('☺'), url('../../fonts/SFUIText-Medium.woff') format('woff'), url('../../fonts/SFUIText-Medium.ttf') format('truetype'), url('../../fonts/SFUIText-Medium.svg') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../../fonts/SFUIText-Semibold.eot');
+  src: local('☺'), url('../../fonts/SFUIText-Semibold.woff') format('woff'), url('../../fonts/SFUIText-Semibold.ttf') format('truetype'), url('../../fonts/SFUIText-Semibold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SFUIText';
+  src: url('../../fonts/SFUIText-Bold.eot');
+  src: local('☺'), url('../../fonts/SFUIText-Bold.woff') format('woff'), url('../../fonts/SFUIText-Bold.ttf') format('truetype'), url('../../fonts/SFUIText-Bold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
