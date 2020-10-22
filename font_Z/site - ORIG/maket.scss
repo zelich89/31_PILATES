@@ -1,0 +1,40 @@
+.maket {
+  position: relative;
+  &__pos {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: .3;
+    z-index: 11;
+    pointer-events: none;
+    display: none;
+    &--mobile {
+      @if $maket-visible == 1 {
+        @media (max-width: $tablet-width) {
+          display: block;
+        }
+      }
+    }
+    &--tablet {
+      //transform: translate(-50%, -1225px);
+      @if $maket-visible == 1 {
+        @media (max-width: $desktop-width) {
+          display: block;
+        }
+        @media (max-width: $tablet-width) {
+          display: none;
+        }
+      }
+    }
+    &--desktop {
+      @if $maket-visible == 1 {
+        display: block;
+        //transform: translate(-50%, -1720px);
+        transform: translateX(-50%);
+        @media (max-width: $desktop-width) {
+          display: none;
+        }
+      }
+    }
+  }
+}
