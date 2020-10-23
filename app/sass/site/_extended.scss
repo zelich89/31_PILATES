@@ -4,13 +4,13 @@
 }
 
 .-wrap {
-  padding: 0 100px;
+  margin: 0 auto;
+  max-width: 1160px;
   @media (max-width: $desktop-width) {
-    padding-left: 170px;
-    padding-right: 150px;
+    width: 640px;
   }
   @media (max-width: $tablet-width) {
-    padding: 0 15px;
+    width: 244px;
   }
 }
 

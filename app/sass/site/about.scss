@@ -4,6 +4,9 @@
 
   &__wrap {
     position: relative;
+  }
+  &__content {
+
     &--indent {
       padding-top: 100px;
       @media (max-width: $desktop-width) {
