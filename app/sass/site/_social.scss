@@ -10,6 +10,7 @@
   &__item {
     cursor: pointer;
     transition: opacity .2s ease;
+    color: inherit;
     &:active {
       color: inherit;
       opacity: .9;

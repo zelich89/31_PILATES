@@ -21,6 +21,13 @@
     display: flex;
     .swiper-slide {
       padding: 90px;
+      @media (max-width: $desktop-width) {
+        padding: 50px;
+      }
+      @media (max-width: $tablet-width) {
+        padding: 0;
+        margin-bottom: 30px;
+      }
     }
   }
   &__item {

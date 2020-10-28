@@ -1,6 +1,5 @@
 .cost {
-
-
+  counter-reset: count;
   &__title {
     @extend .-title;
 

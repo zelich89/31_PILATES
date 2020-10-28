@@ -10,6 +10,22 @@
   @media (max-width: $tablet-width) {
     //padding: 180px 70px 90px;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   }
+  &:before {
+    content: "0"counter(count);
+    counter-increment: count;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    opacity: 10%;
+    @include font-Proxima (210px, 250px, 700);
+    z-index: 1;
+    @media (max-width: $desktop-width) {
+      @include font-Proxima (115px, 135px, 700);
+      top: 20px;
+      right: 15px;
+    }
+
+  }
   &__num {
     position: absolute;
     top: 50px;
