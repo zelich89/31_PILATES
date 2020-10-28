@@ -9,5 +9,10 @@
   }
   &__item {
     cursor: pointer;
+    transition: opacity .2s ease;
+    &:active {
+      color: inherit;
+      opacity: .9;
+    }
   }
 }
