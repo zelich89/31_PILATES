@@ -50,11 +50,11 @@
     right: -100px;
     @media (max-width: $desktop-width) {
       top: 0;
-      right: -40px;
+      right: -160px;
     }
     @media (max-width: $tablet-width) {
       top: 100px;
-      right: -160px;
+      right: -110px;
     }
   }
   &__photo {

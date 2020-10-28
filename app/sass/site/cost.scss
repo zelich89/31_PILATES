@@ -1,0 +1,54 @@
+.cost {
+
+
+  &__title {
+    @extend .-title;
+
+    &--indent {
+      margin-bottom: 60px;
+      @media (max-width: $desktop-width) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: $tablet-width) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__sections {
+    display: flex;
+    margin: 0 -10px;
+    @media (max-width: $desktop-width) {
+      margin: 0 -5px;
+    }
+    @media (max-width: $tablet-width) {
+      margin: -10px 0;
+      justify-content: center;
+    }
+    &--indent {
+      padding-bottom: 130px;
+      @media (max-width: $desktop-width) {
+        padding-bottom: 85px;
+      }
+      @media (max-width: $tablet-width) {
+        flex-wrap: wrap;
+        margin: -10px 0;
+        padding-bottom: 45px;
+      }
+    }
+  }
+  &__section {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+    padding: 0 10px;
+    @media (max-width: $desktop-width) {
+      padding: 0 5px;
+    }
+    @media (max-width: $tablet-width) {
+      max-width: 100%;
+      padding: 10px 0;
+    }
+  }
+  &__card {
+    //margin: 0 10px;
+  }
+}

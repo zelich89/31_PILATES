@@ -5,15 +5,16 @@
   &__wrap {
     position: relative;
   }
+
   &__content {
 
     &--indent {
-      padding-top: 100px;
+      padding: 100px 0;
       @media (max-width: $desktop-width) {
-        padding-top: 40px;
+        padding: 40px 0;
       }
       @media (max-width: $tablet-width) {
-        padding-bottom: 25px;
+        padding: 25px 0;
       }
     }
   }
@@ -28,7 +29,7 @@
       }
       @media (max-width: $tablet-width) {
         margin-bottom: 25px;
-    }
+      }
     }
   }
 
@@ -42,6 +43,7 @@
       @include font-SFUI(14px, 20px, 300);
       width: 100%;
     }
+
     &--indent {
       margin-bottom: 35px;
       @media (max-width: $desktop-width) {
@@ -52,9 +54,10 @@
       }
     }
   }
-    &__link {
-      color: #2a4f37;
-      text-transform: uppercase;
-      @include font-SFUI(14px, 26px, 500);
-    }
+
+  &__link {
+    color: #2a4f37;
+    text-transform: uppercase;
+    @include font-SFUI(14px, 26px, 500);
+  }
 }

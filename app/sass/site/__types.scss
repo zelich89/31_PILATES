@@ -66,3 +66,13 @@ h1, .h1 {
   font-weight: 700;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('../../fonts/Proxima Nova Extrabold.eot');
+  src: local('☺'), url('../../fonts/Proxima Nova Extrabold.woff') format('woff'),
+  url('../../fonts/Proxima Nova Extrabold.ttf') format('truetype'),
+  url('../../fonts/Proxima Nova Extrabold.svg') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}

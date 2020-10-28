@@ -1,0 +1,13 @@
+.social {
+  display: flex;
+  *:not(:last-child) {
+    margin-right: 20px;
+    @media (max-width: $desktop-width) {
+      margin-right: 15px;
+    }
+
+  }
+  &__item {
+    cursor: pointer;
+  }
+}

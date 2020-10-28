@@ -1,0 +1,85 @@
+.card {
+  position: relative;
+  border-radius: 5px;
+  padding: 180px 70px 90px;
+  color: white;
+  z-index: 2;
+  @media (max-width: $desktop-width) {
+    padding: 100px 25px 40px;
+  }
+  @media (max-width: $tablet-width) {
+    //padding: 180px 70px 90px;!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  }
+  &__num {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    opacity: 10%;
+    @include font-Proxima (210px, 250px, 700);
+    z-index: 1;
+    @media (max-width: $desktop-width) {
+      @include font-Proxima (115px, 135px, 700);
+      top: 20px;
+      right: 15px;
+    }
+  }
+  &__sub-title {
+    @include font-Roboto (14px, 20px, 500);
+    @media (max-width: $desktop-width) {
+      @include font-Roboto (12px, 18px, 400);
+    }
+    &--indent {
+
+    }
+  }
+  &__title {
+    @include font-Roboto (28px, 36px, 500);
+    text-transform: uppercase;
+    @media (max-width: $desktop-width) {
+      @include font-Roboto (18px, 23px, 400);
+    }
+    &--indent {
+      padding-bottom: 15px;
+    }
+  }
+  &__price {
+    white-space: nowrap;
+    @include font-SFUI(18px, 24px, bold);
+    @media (max-width: $desktop-width) {
+      @include font-SFUI(16px, 21px, bold);
+    }
+    &--indent {
+      padding-bottom: 15px;
+    }
+  }
+  &__timetable {
+    &--indent {
+      padding-bottom: 25px;
+    }
+  }
+  &__date {
+    @include font-SFUI(18px, 24px, 500);
+    @media (max-width: $desktop-width) {
+      @include font-SFUI(16px, 21px, 500);
+    }
+  }
+  &__button {
+    width: 100%;
+    @include font-SFUI(18px, 1, 500);
+    @media (max-width: $desktop-width) {
+      @include font-SFUI(14px, 1, 500);
+    }
+    text-align: center;
+    
+  }
+  
+  &--first {
+    background-color: #c8d4ac;
+  }
+  &--second {
+    background-color: #b2c38a;
+  }
+  &--third {
+    background-color: #9cb269;
+  }
+}

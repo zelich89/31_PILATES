@@ -6,11 +6,13 @@
 .-wrap {
   margin: 0 auto;
   max-width: 1160px;
+  padding: 0 10px;
   @media (max-width: $desktop-width) {
     width: 640px;
   }
   @media (max-width: $tablet-width) {
-    width: 244px;
+    width: 290px;
+    padding: 0;
   }
 }
 
@@ -22,7 +24,13 @@
     @include font-Roboto(24px, 30px, 500);
   }
   @media (max-width: $tablet-width) {
-    padding-left: 27px;
+    @include font-Roboto(18px, 1);
+  }
+  @media (max-width: $desktop-width) {
+    @include font-Roboto(24px, 30px, 500);
+  }
+  @media (max-width: $tablet-width) {
+    @include font-Roboto(18px, 1);
   }
   &:before {
     content: '';

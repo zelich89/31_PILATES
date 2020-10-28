@@ -1,0 +1,71 @@
+.contacts {
+  &__wrap {
+    position: relative;
+  }
+
+  &__title {
+    @extend .-title;
+
+    &--indent {
+      margin-bottom: 50px;
+      @media (max-width: $desktop-width) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: $tablet-width) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  &__map {
+    height: 513px;
+  }
+  &__address {
+    position: absolute;
+    top: 100%;
+    left: 10px;
+    width: 310px;
+    //height: 365px;
+    background-color:$primary;
+    margin-top: 50px;
+    padding: 60px 70px;
+    @media (max-width: $desktop-width) {
+      padding: 30px 35px;
+    }
+    @media (max-width: $tablet-width) {
+      position: relative;
+      background: transparent;
+      padding: 0 0 20px 0;
+    }
+  }
+  &__name {
+    color: white;
+    @include font-SFUI(16px, 30px, 500);
+    @media (max-width: $desktop-width) {
+      @include font-SFUI(18px, 22px, 500);
+    }
+    @media (max-width: $tablet-width) {
+      color: #000;
+      padding-bottom: 10px;
+    }
+
+  }
+  &__text {
+    color: white;
+    @include font-SFUI(16px, 21px, 300);
+    transition: text-decoration 2s ease;
+    @media (max-width: $tablet-width) {
+      color: #000;
+    }
+    & a:hover {
+      text-decoration: underline;
+    }
+    &:not(:last-child) {
+      padding-bottom: 20px;
+    }
+    @media (max-width: $tablet-width) {
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

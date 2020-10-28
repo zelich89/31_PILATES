@@ -1,0 +1,108 @@
+.how {
+  &__title {
+    @extend .-title;
+
+    &--indent {
+      margin-bottom: 60px;
+      @media (max-width: $desktop-width) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: $tablet-width) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__items {
+
+    &--indent {
+      padding-bottom: 90px;
+      @media (max-width: $desktop-width) {
+        padding-bottom: 70px;
+      }
+      @media (max-width: $tablet-width) {
+        padding-bottom: 60px;
+      }
+    }
+  }
+  &__item {
+    display: flex;
+    //border: 1px solid rebeccapurple;
+    &--indent:not(:last-child) {
+      //padding-bottom: 85px;
+      @media (max-width: $desktop-width) {
+        //padding-bottom: 70px;
+        //padding-left: 50px;
+         }
+      @media (max-width: $tablet-width) {
+        margin-bottom: 70px;
+      }
+    }
+  }
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      text-align: center;
+    }
+    &--indent {
+      padding-left: 90px;
+      @media (max-width: $desktop-width) {
+        padding-left: 50px;
+      }
+      @media (max-width: $tablet-width) {
+        padding-left: 0;
+      }
+    }
+  }
+  &__name {
+    @include font-Roboto (28px, 36px, 400);
+    @media (max-width: $desktop-width) {
+      @include font-Roboto (18px, 24px, 400);
+    }
+    @media (max-width: $tablet-width) {
+      @include font-Roboto (14px, 18px, 400);
+    }
+    &--indent {
+      padding-bottom: 25px;
+      @media (max-width: $tablet-width) {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__text {
+    @include font-SFUI(16px, 24px, 300);
+    @media (max-width: $tablet-width) {
+      @include font-SFUI(14px, 21px, 300);
+    }
+  }
+  &__image-wrapper {
+    text-align: center;
+    width: 50%;
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
+    &--small {
+      display: none;
+      @media (max-width: $tablet-width) {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+    }
+    &--indent {
+      margin-top: -115px;
+      @media (max-width: $desktop-width) {
+        margin-top: -65px;
+      }
+    }
+  }
+  &__image {
+
+    @media (max-width: $tablet-width) {
+      width: 180px;
+    }
+  }
+}
