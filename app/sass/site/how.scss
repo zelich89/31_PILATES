@@ -100,7 +100,7 @@
     }
   }
   &__image {
-
+    max-width: 100%;
     @media (max-width: $tablet-width) {
       width: 180px;
     }

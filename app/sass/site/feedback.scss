@@ -19,6 +19,9 @@
   }
   &__wrapper {
     display: flex;
+    .swiper-slide {
+      padding: 90px;
+    }
   }
   &__item {
     flex-shrink: 0;
