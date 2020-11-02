@@ -26,6 +26,10 @@
   }
   &__item {
     display: flex;
+    height: 570px;
+    @media (max-width: $desktop-width) {
+      height: 300px;
+    }
     //border: 1px solid rebeccapurple;
     &--indent:not(:last-child) {
       //padding-bottom: 85px;
@@ -79,8 +83,63 @@
     }
   }
   &__image-wrapper {
-    text-align: center;
+    position: relative;
     width: 50%;
+    display: flex;
+    justify-content: center;
+    &:nth-child(odd) {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 462px;
+        height: 462px;
+        border-radius: 50%;
+        border: 45px solid rgba($primary, .5);
+        transform: translate(-50%,-40%);
+        @media (max-width: $desktop-width) {
+          width: 236px;
+          height: 236px;
+        }
+      }
+    }
+    &:nth-child(even) {
+      &:before {
+        z-index: 1;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 372px;
+        height: 372px;
+        border-radius: 50%;
+        background-color: rgba($primary, .5);
+        transform: translate(-50%,-40%);
+        @media (max-width: $desktop-width) {
+          width: 195px;
+          height: 195px;
+        }
+      }
+      &:after {
+        z-index: 1;
+        content: '';
+        background-image: url(../../images/decor-dots-xl.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 140px;
+        height: 140px;
+        transform: translate(-25%, -75%);
+        @media (max-width: $desktop-width) {
+          background-image: url(../../images/decor-dots-md.png);
+          width: 70px;
+          height: 70px;
+          transform: translate(-25%, -100%);
+        }
+      }
+    }
     @media (max-width: $tablet-width) {
       display: none;
     }
@@ -100,9 +159,33 @@
     }
   }
   &__image {
+    position: relative;
+    z-index: 2;
     max-width: 100%;
+    display: none;
+    object-fit: none;
     @media (max-width: $tablet-width) {
       width: 180px;
     }
+    &--xl {
+      display: block;
+      @media (max-width: $desktop-width) {
+        display: none;
+      }
+    }
+    &--md {
+      @media (max-width: $desktop-width) {
+        display: block;
+      }
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
+    }
+    &--sm {
+      @media (max-width: $tablet-width) {
+        display: block;
+      }
+    }
+
   }
 }

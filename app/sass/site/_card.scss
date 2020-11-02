@@ -4,6 +4,7 @@
   padding: 180px 70px 90px;
   color: white;
   z-index: 2;
+
   @media (max-width: $desktop-width) {
     padding: 100px 25px 40px;
   }
@@ -69,6 +70,7 @@
     }
   }
   &__timetable {
+    flex-grow: 1;
     &--indent {
       padding-bottom: 25px;
     }

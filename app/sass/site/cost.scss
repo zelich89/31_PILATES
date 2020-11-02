@@ -1,5 +1,6 @@
 .cost {
   counter-reset: count;
+  position: relative;
   &__title {
     @extend .-title;
 
@@ -48,6 +49,9 @@
     }
   }
   &__card {
-    //margin: 0 10px;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
 }

@@ -26,12 +26,6 @@
   @media (max-width: $tablet-width) {
     @include font-Roboto(18px, 1);
   }
-  @media (max-width: $desktop-width) {
-    @include font-Roboto(24px, 30px, 500);
-  }
-  @media (max-width: $tablet-width) {
-    @include font-Roboto(18px, 1);
-  }
   &:before {
     content: '';
     position: absolute;

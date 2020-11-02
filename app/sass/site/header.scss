@@ -51,6 +51,7 @@
     position: relative;
     width: 23px;
     height: 16px;
+    cursor: pointer;
     &:before, &:after {
       content: '';
       position: absolute;
