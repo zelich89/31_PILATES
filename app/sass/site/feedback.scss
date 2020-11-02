@@ -13,10 +13,6 @@
       }
     }
   }
-  &__items {
-    position: relative;
-    overflow: hidden;
-  }
   &__wrapper {
     display: flex;
     .swiper-slide {
@@ -30,7 +26,12 @@
       }
     }
   }
+  &__items {
+    position: relative;
+    overflow: hidden;
+  }
   &__item {
+    position: relative;
     flex-shrink: 0;
     margin: auto;
     width: 970px;
@@ -47,6 +48,27 @@
       width: 280px;
       padding: 40px 15px;
       text-align: center;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 40px;
+      right: 70px;
+      width: 140px;
+      height: 140px;
+      background-image: url(../../images/decor-dots-xl.png);
+      background-repeat: no-repeat;
+      opacity: .5;
+      @media (max-width: $desktop-width) {
+        background-image: url(../../images/decor-dots-md.png);
+        top: 20px;
+        right: 25px;
+        width: 70px;
+        height: 70px;
+      }
+      @media (max-width: $tablet-width) {
+        display: none;
+      }
     }
   }
   &__photo-wrapper {
@@ -77,7 +99,7 @@
     width: 50%;
     color: #000;
     @media (max-width: $desktop-width) {
-      width: 100%;
+      width: 60%;
     }
   }
   &__name {
