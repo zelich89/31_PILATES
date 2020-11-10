@@ -22,9 +22,11 @@
   padding-left: 60px;
   @media (max-width: $desktop-width) {
     @include font-Roboto(24px, 30px, 500);
+    padding-left: 50px;
   }
   @media (max-width: $tablet-width) {
     @include font-Roboto(18px, 1);
+    padding-left: 25px;
   }
   &:before {
     content: '';

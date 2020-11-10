@@ -46,6 +46,7 @@
     @media (max-width: $tablet-width) {
       max-width: 100%;
       padding: 10px 0;
+      flex-basis: 100%;
     }
   }
   &__card {
