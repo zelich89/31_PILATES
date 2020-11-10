@@ -65,9 +65,34 @@
   }
 
   &__link {
+    position: relative;
+    display: inline-block;
     color: #2a4f37;
     text-transform: uppercase;
-    @include font-SFUI(14px, 26px, 500);
+    padding-right: 20px;
+    @include font-SFUI(14px, 2, 500);
+    &:after {
+      content: '';
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      right: 10px;
+      width: 7px;
+      height: 14px;
+      transform: translate(200%, -50%);
+      background-image: url(../../images/right-arrow-xl.png);
+      background-repeat: no-repeat;
+      @media (max-width: $desktop-width) {
+        width: 7px;
+        height: 13px;
+        background-image: url(../../images/right-arrow-md.png);
+      }
+      @media (max-width: $tablet-width) {
+        width: 6px;
+        height: 12px;
+        background-image: url(../../images/right-arrow-sm.png);
+      }
+    }
   }
   &__image-wrapper {
     display: flex;
