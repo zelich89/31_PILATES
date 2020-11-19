@@ -1,5 +1,4 @@
 .feedback {
-  margin-bottom: 100px;
   &__title {
     @extend .-title;
 
@@ -18,11 +17,11 @@
     .swiper-slide {
       padding: 90px;
       @media (max-width: $desktop-width) {
-        padding: 50px;
+        padding: 0;
       }
       @media (max-width: $tablet-width) {
-        padding: 0;
-        margin-bottom: 30px;
+        //padding: 0;
+        //margin-bottom: 30px;
       }
     }
   }
@@ -41,13 +40,13 @@
     padding: 90px 30px 90px 60px;
     @media (max-width: $desktop-width) {
       width: 515px;
-      padding: 15px 35px 50px;
+      padding: 15px 15px 40px ;
     }
     @media (max-width: $tablet-width) {
       display: block;
       width: 280px;
       padding: 40px 15px;
-      text-align: center;
+      //text-align: center;
     }
     &:after {
       content: '';
@@ -62,7 +61,7 @@
       @media (max-width: $desktop-width) {
         background-image: url(../../images/decor-dots-md.png);
         top: 20px;
-        right: 25px;
+        right: 15px;
         width: 70px;
         height: 70px;
       }
@@ -101,14 +100,26 @@
     @media (max-width: $desktop-width) {
       width: 60%;
     }
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      text-align: center;
+    }
   }
   &__name {
+    text-align: left;
     @include font-Roboto (28px, 36px);
     @media (max-width: $desktop-width) {
       @include font-Roboto(18px, 24px);
     }
     @media (max-width: $tablet-width) {
       @include font-Roboto(16px, 20px);
+      text-align: center;
+    }
+    &--indent {
+      margin-bottom: 10px;
+      @media (max-width: $desktop-width) {
+        margin-bottom: 5px;
+      }
     }
   }
   &__data {
@@ -143,15 +154,21 @@
 
   }
   &__text {
+    text-align: left;
     height: 120px;
     overflow-y: hidden;
     @include font-SFUI(16px, 24px, 300);
     @media (max-width: $desktop-width) {
       height: 65px;
-      @include font-SFUI(16px, 1, 300);
+      @include font-SFUI(16px, 18зч, 300);
     }
     @media (max-width: $tablet-width) {
       @include font-SFUI(14px, 16px, 300);
+    }
+  }
+  &__big-text {
+    @media (max-width: $desktop-width) {
+      display: none;
     }
   }
   
@@ -161,12 +178,17 @@
     right: 0;
     left: 0;
     z-index: 5;
+    @media (max-width: $tablet-width) {
+      display: none;
+    }
   }
   &__arrow {
     cursor: pointer;
     position: absolute;
     transform: translateY(-50%);
-
+    @media (max-width: $desktop-width) {
+      width: 13px;
+    }
     &--left {
       left: 0;
     }
@@ -179,6 +201,11 @@
     align-items: center;
     justify-content: center;
     margin-top: 50px;
+    @media (max-width: $desktop-width) {
+      margin-top: 25px;
+    }
+    @media (max-width: $tablet-width) {
+    }
 
     & *:not(:last-child) {
       margin-right: 20px;
@@ -196,6 +223,21 @@
     &.active {
       opacity: 1;
       border-color: $primary;
+    }
+    @media (max-width: $desktop-width) {
+      width: 9px;
+      height: 9px;
+    }
+    @media (max-width: $tablet-width) {
+    }
+  }
+  &--indent {
+    margin-bottom: 125px;
+    @media (max-width: $desktop-width) {
+      margin-bottom: 90px;
+    }
+    @media (max-width: $tablet-width) {
+      margin-bottom: 60px;
     }
   }
 }

@@ -276,7 +276,7 @@
     </div>
 </section>
 
-<section class="feedback">
+<section class="feedback feedback--indent">
     <div class="feedback__container -container">
         <div class="feedback__wrap -wrap">
             <h2 class="feedback__title feedback__title--indent">Отзывы</h2>
@@ -288,7 +288,7 @@
                                 <img class="feedback__photo" src="images/e5-1.png" alt="">
                             </div>
                             <div class="feedback__main">
-                                <div class="feedback__name">Вероника Кулешова</div>
+                                <div class="feedback__name feedback__name--indent">Вероника Кулешова</div>
                                 <div class="feedback__data feedback__data--indent">
                                     <div class="feedback__age"> 25 лет</div>
                                     <div class="feedback__social social">
@@ -304,7 +304,10 @@
                                     Хожу на пилатес уже пять месяцев.
                                     <br>
                                     После десяти занятий уже увидела результат:1 тело подтянулось, улучшилась осанка, появился пресс.
-                                    И самое главное, пропал сильный изгиб поясничного отдела, который меня очень беспокоил.
+                                    <span class="feedback__big-text">
+                                    <br>
+                                        И самое главное, пропал сильный изгиб поясничного отдела, который меня очень беспокоил.
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -315,7 +318,7 @@
                                 <img class="feedback__photo" src="images/e5-2.png" alt="">
                             </div>
                             <div class="feedback__main">
-                                <div class="feedback__name">Елизавета Смирнова</div>
+                                <div class="feedback__name feedback__name--indent">Елизавета Смирнова</div>
                                 <div class="feedback__data feedback__data--indent">
                                     <div class="feedback__age">29 лет</div>
                                     <div class="feedback__social social">
@@ -339,7 +342,7 @@
                                 <img class="feedback__photo" src="images/e5-3.png" alt="">
                             </div>
                             <div class="feedback__main">
-                                <div class="feedback__name">Кристина Егорова</div>
+                                <div class="feedback__name feedback__name--indent">Кристина Егорова</div>
                                 <div class="feedback__data feedback__data--indent">
                                     <div class="feedback__age"> 23 лет</div>
                                     <div class="feedback__social social">
@@ -452,7 +455,7 @@
 <!-- Initialize Swiper -->
 <script>
     var swiper = new Swiper('.swiper-container', {
-        loop: true,
+        loop: false,
         speed: 500,
 
         // If we need pagination
