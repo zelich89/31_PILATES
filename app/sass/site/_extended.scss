@@ -25,7 +25,8 @@
     padding-left: 50px;
   }
   @media (max-width: $tablet-width) {
-    @include font-Roboto(18px, 1);
+    @include font-Roboto(18px, 1, 500);
+
     padding-left: 25px;
   }
   &:before {

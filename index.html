@@ -15,12 +15,39 @@
     <script src="https://kit.fontawesome.com/8f8ac06a82.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
 
     <link rel="stylesheet" href="build/css/main.css">
     <title>Pilates</title>
 
 </head>
 <body>
+
+<!-- Swiper -->
+<!--<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+        <div class="swiper-slide">Slide 10</div>
+    </div>
+    &lt;!&ndash; Add Pagination &ndash;&gt;
+    &lt;!&ndash;    <div class="swiper-pagination"></div>&ndash;&gt;
+        <div class="feedback__pagination">
+            <div class="feedback__dot active"></div>
+            <div class="feedback__dot"></div>
+            <div class="feedback__dot"></div>
+        </div>
+        &lt;!&ndash; Add Arrows &ndash;&gt;
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>-->
 
 <!--<div class="box">
     <div class="box__1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate dignissimos, neque non odio qui recusandae saepe sequi sit. Cumque ea eius fugit incidunt ipsam labore reiciendis suscipit unde velit?</div>
@@ -87,6 +114,7 @@
                     от дискомфорта в позвоночнике
                 </div>
                 <a href="#" class="about__link">Подробнее</a>
+                <img src="http://www.placehold.it/50" alt="">
             </div>
             <div class="about__image-wrapper about__image-wrapper--indent">
                 <img class="about__image about__image--xl" src="images/e2-1-xl.png" alt="">
@@ -331,8 +359,8 @@
                     </div>
                 </div>
                 <div class="feedback__arrows">
-                    <img class="feedback__arrow feedback__arrow--left" src="images/left_arrow.png" alt="">
-                    <img class="feedback__arrow feedback__arrow--right" src="images/right_arrow.png" alt="">
+                    <img class="feedback__arrow feedback__arrow--left" src="images/left-arrow.png" alt="">
+                    <img class="feedback__arrow feedback__arrow--right" src="images/right-arrow.png" alt="">
                 </div>
                 <div class="feedback__pagination">
                     <div class="feedback__dot active"></div>
@@ -396,9 +424,30 @@
 
 </footer>
 
+
 <!-- Swiper JS -->
 <!--<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>-->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<!--<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          /*  el: '.swiper-pagination',
+            type: 'progressbar',*/
+            el: '.feedback__pagination',
+            type: 'bullets',
+            bulletClass: 'feedback__dot',
+            bulletActiveClass: 'active',
+            bulletElement: 'div',
+            clickable:  true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>-->
 
 <!-- Initialize Swiper -->
 <script>
@@ -427,9 +476,5 @@
                 }*/
     });
 </script>
-<script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx_DHIxNvt0kIGTE4ATyxXQLutoIxnpLI&callback=initMap&libraries=&v=weekly"
-        defer
-></script>
 </body>
 </html>

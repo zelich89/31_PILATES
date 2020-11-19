@@ -21,6 +21,6 @@
     "gulp-strip-css-comments": "^2.0.0"
   },
   "dependencies": {
-    "swiper": "^5.3.0"
+    "swiper": "^5.4.5"
   }
 }

@@ -5,72 +5,432 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAACy2MsA5/PvAHm6pgBrtJ0AZrKaAJnLuwBcq5MAWKmQAPv9/QD8/f0AcriiAHi6pQCp08YArtXJAFqrkgDX6uQA/v//AJDGtgD///8A+/38AGuznQD+//4Ah8KvAOXy7gDm8u4Amsy9AJvMvQBVqI8AVqiPAGKulwBZqpEAVaiOAFqqkQD5/PsAgb+sAKrUxwBgrpYAhcGuAOjz8ACWybkAw+DXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4ZGRkeHh4eHh4eHh4eJRoaEhIZDh4eHh4eHh4cHBISEhISCx4eHh4eHh4oEhISGgMVEg8eHh4eHh0hEhIMHh4eIAkSBB4eHgcYEhIjHh4eHh4eFRIkHh4bEhINHh4eHh4eHgoSJh4eIhIAHh4eHh4eHh4HCAEXFBMIIB4eHh4eHh4eHicSEhIQBh4eHh4eHh4eHh4fEhISER4eHh4eHh4eHh4eHgIFFh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAACy2MsA5/PvAHm6pgBrtJ0AZrKaAJnLuwBcq5MAWKmQAPv9/QD8/f0AcriiAHi6pQCp08YArtXJAFqrkgDX6uQA/v//AJDGtgD///8A+/38AGuznQD+//4Ah8KvAOXy7gDm8u4Amsy9AJvMvQBVqI8AVqiPAGKulwBZqpEAVaiOAFqqkQD5/PsAgb+sAKrUxwBgrpYAhcGuAOjz8ACWybkAw+DXAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4ZGRkeHh4eHh4eHh4eJRoaEhIZDh4eHh4eHh4cHBISEhISCx4eHh4eHh4oEhISGgMVEg8eHh4eHh0hEhIMHh4eIAkSBB4eHgcYEhIjHh4eHh4eFRIkHh4bEhINHh4eHh4eHgoSJh4eIhIAHh4eHh4eHh4HCAEXFBMIIB4eHh4eHh4eHicSEhIQBh4eHh4eHh4eHh4fEhISER4eHh4eHh4eHh4eHgIFFh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+          rel="icon" type="image/x-icon"/>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500:700&display=swap" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/8f8ac06a82.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <link rel="stylesheet" href="build/css/main.css">
     <title>Pilates</title>
 
-    <svg style="display: none;">
-
-        <symbol viewBox="0 0 16 14" id="icon-burger">
-            <g>
-                <path d="M0 0L8 0L8 2L0 2L0 0Z" fill="currentColor" stroke="none" />
-                <path d="M0 0L16 0L16 2L0 2L0 0Z" transform="translate(0 6)" fill="currentColor" stroke="none" />
-                <path d="M0 0L16 0L16 2L0 2L0 0Z" transform="translate(0 12)" fill="currentColor" stroke="none" />
-            </g>
-        </symbol>
-    </svg>
 </head>
 <body>
-<div class="maket">
-    <img class="maket__pos maket__pos--mobile" src="images/pilates-mobile-preview.png" alt="">
-    <img class="maket__pos maket__pos--tablet" src="images/pilates-tablet-preview.png" alt="">
-    <img class="maket__pos maket__pos--desktop" src="images/pilates-desktop-preview.png" alt="">
-</div>
+
+<!--<div class="box">
+    <div class="box__1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate dignissimos, neque non odio qui recusandae saepe sequi sit. Cumque ea eius fugit incidunt ipsam labore reiciendis suscipit unde velit?</div>
+    <div class="box__2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores delectus, doloremque error eum laborum perferendis, praesentium, provident ratione saepe tenetur voluptatum? Atque laudantium modi nisi perferendis quaerat recusandae suscipit.</div>
+    <div class="box__3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet commodi cumque dolorem doloremque eos error eum iusto labore, necessitatibus obcaecati perspiciatis recusandae sunt tenetur ut velit voluptate voluptatum.</div>
+    <div class="box__4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis cupiditate explicabo iusto nihil odit quas quisquam sunt ut velit! Consequuntur explicabo, molestias nam possimus praesentium saepe sapiente vel. Rem.</div>
+    <div class="box__5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit ad, blanditiis aperiam consequatur, debitis quos aliquam rem modi beatae, tempore minus totam doloribus reiciendis. Sapiente corporis at quos fugiat nam!</div>
+</div>-->
+
 <header class="header">
-    <div class="header__warps warps">
-        <div class="header__content  header__content--circle header__content--indent">
-            <div class="header__logo logo">
-                <img class="logo__pic" src="images/logo.png" alt="">
-            </div>
+    <div class="header__container header__container--circle -container">
+        <div class="header__wrap -wrap">
+            <a href="#">
+                <img class="header__logo" src="images/logo-xl.png" alt="">
+            </a>
             <div class="header__burger">
-                <svg class="svg">
-                    <use xlink:href="#icon-burger"></use>
-                </svg>
+                <span></span>
             </div>
-            <div class="header__text">
+            <div class="header__phone">
                 +7 918 365 07 07
             </div>
         </div>
     </div>
 </header>
 
-<!--  2  -->
-<!--<section class="main-sect">
-    <div class="main-sect__warps warps">
-        <div class="main-sect__content main-sect__content&#45;&#45;indent">
-            <h1 class="main-sect__title main-sect__title&#45;&#45;indent">Студия<br>
-                пилатеса</h1>
-            <div class="main-sect__text main-sect__text&#45;&#45;indent">твое здоровое тело через 10 занятий</div>
-            <div class="main-sect__button button button__arrow button&#45;&#45;bdrs">Смотреть расписание</div>
-            <img class="main-sect__photo" src="images/photo.png" alt="">
+<section class="main-sect main-sect--indent">
+    <div class="main-sect__container -container">
+        <div class="main-sect__wrap main-sect__wrap--indent -wrap">
+            <div class="main-sect__content main-sect__content--indent">
+                <h1 class="main-sect__title main-sect__title--indent">Студииnя<br>
+                    пилатеса</h1>
+                <div class="main-sect__text main-sect__text--indent">твое здоровое тело через 10 занятий</div>
+                <div class="main-sect__button button button--bdrs button--arrow">Смотреть расписание</div>
+            </div>
+            <div class="main-sect__photo-wrapper">
+                <img class="main-sect__photo" alt="" src="images/photo.png">
+            </div>
         </div>
     </div>
-</section>-->
-
-<!--  3  -->
-<!--<section class="about">
-    <div class="about__warps warps">
-        <div class="about__title">О пилатесе</div>
+    <div class="main-sect__menu">
+        <div class="main-sect__close"></div>
+        <ul class="main-sect__list">
+            <li class="main-sect__item active">О пилатесе</li>
+            <li class="main-sect__item">Расписание и стоимость</li>
+            <li class="main-sect__item">Как проходят занятия</li>
+            <li class="main-sect__item">Отзывы</li>
+            <li class="main-sect__item">Контакты</li>
+        </ul>
     </div>
-</section>-->
+</section>
 
+<section class="about about--indent">
+    <div class="about__container -container">
+        <div class="about__wrap about__wrap -wrap">
+            <div class="about__content about__content--indent">
+                <h2 class="about__title about__title--indent">О пилатесе</h2>
+                <div class="about__text about__text--indent">
+                    Пилатес соединяет элементы растяжки
+                    с элементами силовой тренировки
+                    <br>
+                    <br>
+                    Комплекс упражнений укрепляет мышцы пресса
+                    и спины, улучшает гибкость мышц и связок, подвижность суставов и избавляет
+                    от дискомфорта в позвоночнике
+                </div>
+                <a href="#" class="about__link">Подробнее</a>
+                <img src="http://www.placehold.it/50" alt="">
+            </div>
+            <div class="about__image-wrapper about__image-wrapper--indent">
+                <img class="about__image about__image--xl" src="images/e2-1-xl.png" alt="">
+                <img class="about__image about__image--md" src="images/e2-1-md.png" alt="">
+                <img class="about__image about__image--sm" src="images/e2-1-sm.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="cost">
+    <div class="cost__container -container">
+        <div class="cost__wrap -wrap">
+            <h2 class="cost__title cost__title--indent">Расписание и стоимость</h2>
+            <div class="cost__sections cost__sections--indent">
+                <div class="cost__section">
+                    <div class="cost__card card card--first">
+                        <!--                        <div class="card__num">01</div>-->
+                        <div class="card__sub-title card__sub-title--indent">УРОВЕНЬ</div>
+                        <div class="card__title card__title--indent">новичок</div>
+                        <div class="card__price card__price--indent"> 150 руб. / занятие</div>
+                        <div class="card__timetable card__timetable--indent">
+                            <div class="card__date">
+                                пн 9:00 — 10:00
+                            </div>
+                            <div class="card__date">
+                                ср 9:00 — 10:00
+                            </div>
+                            <div class="card__date">
+                                чт 9:00 — 10:00
+                            </div>
+                            <div class="card__date">
+                                пт 9:00 — 10:00
+                            </div>
+                        </div>
+                        <a href="#" class="card__button button button--bdrs button--arrow button--add">Записаться</a>
+
+                    </div>
+                </div>
+                <div class="cost__section">
+                    <div class="cost__card card card--second">
+                        <!--                        <div class="card__num">02</div>-->
+                        <div class="card__sub-title card__sub-title--indent">УРОВЕНЬ</div>
+                        <div class="card__title card__title--indent">ПРОФИ</div>
+                        <div class="card__price card__price--indent"> 200 руб. / занятие</div>
+                        <div class="card__timetable card__timetable--indent">
+                            <div class="card__date">
+                                пн 18:15 - 19:45
+                            </div>
+                            <div class="card__date">
+                                пн 18:15 - 19:45
+                            </div>
+                            <div class="card__date">
+                                пн 18:15 - 19:45
+                            </div>
+                        </div>
+                        <a href="#" class="card__button button button--bdrs button--arrow button--add">Записаться</a>
+
+                    </div>
+                </div>
+                <div class="cost__section">
+                    <div class="cost__card card card--third">
+                        <div class="card__num">03</div>
+                        <div class="card__sub-title card__sub-title--indent">УРОВЕНЬ</div>
+                        <div class="card__title card__title--indent">Мастер</div>
+                        <div class="card__price card__price--indent"> 350 руб. / занятие</div>
+                        <div class="card__timetable card__timetable--indent">
+                            <div class="card__date">
+                                пн 20:00 — 21:30
+                            </div>
+                            <div class="card__date">
+                                ср 20:00 — 21:30
+                            </div>
+                            <div class="card__date">
+                                пт 20:00 — 21:30
+                            </div>
+                        </div>
+                        <a href="#" class="card__button button button--bdrs button--arrow button--add">Записаться</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how">
+    <div class="how__container -container">
+        <div class="how__wrap -wrap">
+            <h2 class="how__title how__title--indent">Как проходят занятия</h2>
+            <div class="how__items how__items--indent">
+                <div class="how__item how__item--indent">
+                    <div class="how__content how__content--indent">
+                        <h3 class="how__name how__name--indent">Дыхательные техники</h3>
+                        <div class="how__image-wrapper how__image-wrapper--small">
+                            <img class="how__image how__image--sm" src="images/e4-1-sm.png" alt="">
+                        </div>
+                        <div class="how__text">Специальные дыхательные упражнения помогут сконцентрировать внимание и
+                            сфокусировать сознание на мышцах тела
+                        </div>
+                    </div>
+                    <div class="how__image-wrapper how__image-wrapper--indent">
+                        <img class="how__image how__image--md" src="images/e4-1-md.png" alt="">
+                        <img class="how__image how__image--xl" src="images/e4-1-xl.png" alt="">
+                    </div>
+
+                </div>
+                <div class="how__item how__item--indent">
+                    <div class="how__image-wrapper how__image-wrapper--indent">
+                        <img class="how__image how__image--md" src="images/e4-2-md.png" alt="">
+                        <img class="how__image how__image--xl" src="images/e4-2-xl.png" alt="">
+                    </div>
+                    <div class="how__content how__content--indent">
+                        <h3 class="how__name how__name--indent">Разминка</h3>
+                        <div class="how__image-wrapper how__image-wrapper--small">
+                            <img class="how__image how__image--sm" src="images/e4-2-sm.png" alt="">
+                        </div>
+                        <div class="how__text">Перед началом занятия разогреваем тело:
+                            <br>
+                            проработываем мышцы спины, шеи, выполняем упражнения на баланс под спокойную музыку
+                        </div>
+                    </div>
+
+                </div>
+                <div class="how__item how__item--indent">
+                    <div class="how__content how__content--indent">
+                        <h3 class="how__name how__name--indent">Основной блок</h3>
+                        <div class="how__image-wrapper how__image-wrapper--small">
+                            <img class="how__image how__image--sm" src="images/e4-3-sm.png" alt="">
+                        </div>
+                        <div class="how__text">Упражнения выполняются лежа на коврике
+                            без оборудования или с малым оборудованием,
+                            в медленном темпе
+                        </div>
+                    </div>
+                    <div class="how__image-wrapper">
+                        <img class="how__image how__image--md" src="images/e4-3-md.png" alt="">
+                        <img class="how__image how__image--xl" src="images/e4-3-xl.png" alt="">
+                    </div>
+
+                </div>
+                <div class="how__item how__item--indent">
+                    <div class="how__image-wrapper">
+                        <img class="how__image how__image--md" src="images/e4-4-md.png" alt="">
+                        <img class="how__image how__image--xl" src="images/e4-4-xl.png" alt="">
+                    </div>
+                    <div class="how__content how__content--indent">
+                        <h3 class="how__name how__name--indent">Стрейчинг</h3>
+                        <div class="how__image-wrapper how__image-wrapper--small">
+                            <img class="how__image how__image--sm" src="images/e4-4-sm.png" alt="">
+                        </div>
+                        <div class="how__text">В конце занятия выполняем специальные упражнения для развития гибкости,
+                            снятия усталости, стресса и мышечного напряжения
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="feedback">
+    <div class="feedback__container -container">
+        <div class="feedback__wrap -wrap">
+            <h2 class="feedback__title feedback__title--indent">Отзывы</h2>
+            <div class="feedback__items swiper-container">
+                <div class="feedback__wrapper swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="feedback__item">
+                            <div class="feedback__photo-wrapper feedback__photo-wrapper--indent">
+                                <img class="feedback__photo" src="images/e5-1.png" alt="">
+                            </div>
+                            <div class="feedback__main">
+                                <div class="feedback__name">Вероника Кулешова</div>
+                                <div class="feedback__data feedback__data--indent">
+                                    <div class="feedback__age"> 25 лет</div>
+                                    <div class="feedback__social social">
+                                        <a href="#" class="social__item">
+                                            <i class="fab fa-vk"></i>
+                                        </a>
+                                        <a href="#" class="social__item">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feedback__text">
+                                    Хожу на пилатес уже пять месяцев.
+                                    <br>
+                                    После десяти занятий уже увидела результат:1 тело подтянулось, улучшилась осанка, появился пресс.
+                                    И самое главное, пропал сильный изгиб поясничного отдела, который меня очень беспокоил.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="feedback__item">
+                            <div class="feedback__photo-wrapper feedback__photo-wrapper--indent">
+                                <img class="feedback__photo" src="images/e5-2.png" alt="">
+                            </div>
+                            <div class="feedback__main">
+                                <div class="feedback__name">Елизавета Смирнова</div>
+                                <div class="feedback__data feedback__data--indent">
+                                    <div class="feedback__age">29 лет</div>
+                                    <div class="feedback__social social">
+                                        <a href="#" class="social__item">
+                                            <i class="fab fa-vk"></i>
+                                        </a>
+                                        <a href="#" class="social__item">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feedback__text">
+                                    Очень нравятся занятия, хожу уже пять месяцев. На занятиях делаем много упражнений на пресс, бедра и спину. Мышци подтянулись, появился рельеф и хорошее настроение :)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="feedback__item">
+                            <div class="feedback__photo-wrapper feedback__photo-wrapper--indent">
+                                <img class="feedback__photo" src="images/e5-3.png" alt="">
+                            </div>
+                            <div class="feedback__main">
+                                <div class="feedback__name">Кристина Егорова</div>
+                                <div class="feedback__data feedback__data--indent">
+                                    <div class="feedback__age"> 23 лет</div>
+                                    <div class="feedback__social social">
+                                        <a href="#" class="social__item">
+                                            <i class="fab fa-vk"></i>
+                                        </a>
+                                        <a href="#" class="social__item">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="feedback__text">
+                                    Рекомендую заниматься всем! У меня сколиоз и спина часто болит после рабочего дня. После занятий появилась лекость в мышцах и свобода движений. Приходите!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="feedback__arrows">
+                    <img class="feedback__arrow feedback__arrow--left" src="images/left_arrow.png" alt="">
+                    <img class="feedback__arrow feedback__arrow--right" src="images/right_arrow.png" alt="">
+                </div>
+                <div class="feedback__pagination">
+                    <div class="feedback__dot active"></div>
+                    <div class="feedback__dot"></div>
+                    <div class="feedback__dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contacts">
+    <div class="contacts__container -container">
+        <div class="contacts__wrap -wrap">
+            <h2 class="contacts__title contacts__title--indent">Контакты</h2>
+            <div class="contacts__address">
+                <div class="contacts__name">Адрес</div>
+                <div class="contacts__text">
+                    г. Кропоткин
+                    <br>
+                    ул. Дугинец 10а
+                </div>
+                <div class="contacts__name">Телефон</div>
+                <a href="tel:79183650607" class="contacts__text">
+                    +7 918 365 06 07
+                </a>
+                <div class="contacts__name">E-mail</div>
+                <a href="mailto:pilatesplus@gmail.com" class="contacts__text">
+                    pilatesplus@gmail.com
+                </a>
+            </div>
+        </div>
+        <div class="contacts__map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2799.8072418871716!2d40.568131215556434!3d45.43338687910055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40fa466caee8345f%3A0x35b75298f6d78e58!2z0YPQuy4g0JTRg9Cz0LjQvdC10YYsIDEw0LAsINCa0YDQvtC_0L7RgtC60LjQvSwg0JrRgNCw0YHQvdC-0LTQsNGA0YHQutC40Lkg0LrRgNCw0LksINCg0L7RgdGB0LjRjywgMzUyMzgw!5e0!3m2!1sru!2sua!4v1603805181440!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__container -container">
+        <div class="footer__wrap -wrap">
+            <div class="footer__copyright">Pilates Plus, 2017 ©</div>
+            <div class="footer__logo">
+                <img src="images/logo-xl.png" alt="">
+            </div>
+            <div class="footer__social social">
+                <div class="social__item">
+                    <i class="fab fa-vk"></i>
+                </div>
+                <div class="social__item">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="social__item">
+                    <i class="fab fa-vk"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Swiper JS -->
+<!--<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>-->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        speed: 500,
+
+        // If we need pagination
+        pagination: {
+            el: '.feedback__pagination',
+            type: 'bullets',
+            bulletClass: 'feedback__dot',
+            bulletActiveClass: 'active',
+            bulletElement: 'div',
+            clickable:  true,
+        },
+        // Navigation arrows
+        navigation: {
+            prevEl: '.feedback__arrow--left',
+            nextEl: '.feedback__arrow--right',
+        },
+
+        /*        autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                }*/
+    });
+</script>
+<script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBx_DHIxNvt0kIGTE4ATyxXQLutoIxnpLI&callback=initMap&libraries=&v=weekly"
+        defer
+></script>
 </body>
 </html>
