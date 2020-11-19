@@ -26,9 +26,9 @@
   }
   &__item {
     display: flex;
-    height: 570px;
+    //height: 570px;
     @media (max-width: $desktop-width) {
-      height: 300px;
+      //height: 300px;
     }
     //border: 1px solid rebeccapurple;
     &--indent {
