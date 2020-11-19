@@ -31,14 +31,14 @@
       height: 300px;
     }
     //border: 1px solid rebeccapurple;
-    &--indent:not(:last-child) {
+    &--indent {
       //padding-bottom: 85px;
       @media (max-width: $desktop-width) {
         //padding-bottom: 70px;
         //padding-left: 50px;
          }
       @media (max-width: $tablet-width) {
-        margin-bottom: 70px;
+        //margin-bottom: 70px;
       }
     }
   }
