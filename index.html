@@ -23,40 +23,6 @@
 </head>
 <body>
 
-<!-- Swiper -->
-<!--<div class="swiper-container">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
-        <div class="swiper-slide">Slide 10</div>
-    </div>
-    &lt;!&ndash; Add Pagination &ndash;&gt;
-    &lt;!&ndash;    <div class="swiper-pagination"></div>&ndash;&gt;
-        <div class="feedback__pagination">
-            <div class="feedback__dot active"></div>
-            <div class="feedback__dot"></div>
-            <div class="feedback__dot"></div>
-        </div>
-        &lt;!&ndash; Add Arrows &ndash;&gt;
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>-->
-
-<!--<div class="box">
-    <div class="box__1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque cupiditate dignissimos, neque non odio qui recusandae saepe sequi sit. Cumque ea eius fugit incidunt ipsam labore reiciendis suscipit unde velit?</div>
-    <div class="box__2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores delectus, doloremque error eum laborum perferendis, praesentium, provident ratione saepe tenetur voluptatum? Atque laudantium modi nisi perferendis quaerat recusandae suscipit.</div>
-    <div class="box__3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias amet commodi cumque dolorem doloremque eos error eum iusto labore, necessitatibus obcaecati perspiciatis recusandae sunt tenetur ut velit voluptate voluptatum.</div>
-    <div class="box__4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem blanditiis cupiditate explicabo iusto nihil odit quas quisquam sunt ut velit! Consequuntur explicabo, molestias nam possimus praesentium saepe sapiente vel. Rem.</div>
-    <div class="box__5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit ad, blanditiis aperiam consequatur, debitis quos aliquam rem modi beatae, tempore minus totam doloribus reiciendis. Sapiente corporis at quos fugiat nam!</div>
-</div>-->
-
 <header class="header">
     <div class="header__container header__container--circle -container">
         <div class="header__wrap -wrap">
@@ -77,7 +43,7 @@
     <div class="main-sect__container -container">
         <div class="main-sect__wrap main-sect__wrap--indent -wrap">
             <div class="main-sect__content main-sect__content--indent">
-                <h1 class="main-sect__title main-sect__title--indent">Студииnя<br>
+                <h1 class="main-sect__title main-sect__title--indent">Студия<br>
                     пилатеса</h1>
                 <div class="main-sect__text main-sect__text--indent">твое здоровое тело через 10 занятий</div>
                 <div class="main-sect__button button button--bdrs button--arrow">Смотреть расписание</div>
@@ -116,9 +82,14 @@
                 <a href="#" class="about__link">Подробнее</a>
             </div>
             <div class="about__image-wrapper about__image-wrapper--indent">
-                <img class="about__image about__image--xl" src="images/e2-1-xl.png" alt="">
-                <img class="about__image about__image--md" src="images/e2-1-md.png" alt="">
-                <img class="about__image about__image--sm" src="images/e2-1-sm.png" alt="">
+<!--                <img class="about__image about__image&#45;&#45;xl" src="images/e2-1-xl.png" alt="">
+                <img class="about__image about__image&#45;&#45;md" src="images/e2-1-md.png" alt="">
+                <img class="about__image about__image&#45;&#45;sm" src="images/e2-1-sm.png" alt="">-->
+                <picture>
+                    <source srcset="images/e2-1-sm.png" media="(max-width: 500px">
+                    <source srcset="images/e2-1-md.png" media="(max-width: 1300px">
+                    <img class="how__image" src="images/e2-1-xl.png" alt="">
+                </picture>
             </div>
         </div>
     </div>
@@ -208,27 +179,33 @@
                     <div class="how__content how__content--indent">
                         <h3 class="how__name how__name--indent">Дыхательные техники</h3>
                         <div class="how__image-wrapper how__image-wrapper--small">
-                            <img class="how__image how__image--sm" src="images/e4-1-sm.png" alt="">
+                            <img class="how__image how__image--small" src="images/e4-1-sm.png" alt="">
                         </div>
                         <div class="how__text">Специальные дыхательные упражнения помогут сконцентрировать внимание и
                             сфокусировать сознание на мышцах тела
                         </div>
                     </div>
                     <div class="how__image-wrapper how__image-wrapper--indent">
-                        <img class="how__image how__image--md" src="images/e4-1-md.png" alt="">
-                        <img class="how__image how__image--xl" src="images/e4-1-xl.png" alt="">
+                        <picture>
+                            <source srcset="" media="(max-width: 500px">
+                            <source srcset="images/e4-1-md.png" media="(max-width: 1300px">
+                            <img class="how__image" src="images/e4-1-xl.png" alt="">
+                        </picture>
                     </div>
 
                 </div>
                 <div class="how__item how__item--indent">
                     <div class="how__image-wrapper how__image-wrapper--indent">
-                        <img class="how__image how__image--md" src="images/e4-2-md.png" alt="">
-                        <img class="how__image how__image--xl" src="images/e4-2-xl.png" alt="">
+                        <picture>
+                            <source srcset="" media="(max-width: 500px">
+                            <source srcset="images/e4-2-md.png" media="(max-width: 1300px">
+                            <img class="how__image" src="images/e4-2-xl.png" alt="">
+                        </picture>
                     </div>
                     <div class="how__content how__content--indent">
                         <h3 class="how__name how__name--indent">Разминка</h3>
                         <div class="how__image-wrapper how__image-wrapper--small">
-                            <img class="how__image how__image--sm" src="images/e4-2-sm.png" alt="">
+                            <img class="how__image how__image--small" src="images/e4-2-sm.png" alt="">
                         </div>
                         <div class="how__text">Перед началом занятия разогреваем тело:
                             <br>
@@ -241,7 +218,7 @@
                     <div class="how__content how__content--indent">
                         <h3 class="how__name how__name--indent">Основной блок</h3>
                         <div class="how__image-wrapper how__image-wrapper--small">
-                            <img class="how__image how__image--sm" src="images/e4-3-sm.png" alt="">
+                            <img class="how__image how__image--small" src="images/e4-3-sm.png" alt="">
                         </div>
                         <div class="how__text">Упражнения выполняются лежа на коврике
                             без оборудования или с малым оборудованием,
@@ -249,20 +226,30 @@
                         </div>
                     </div>
                     <div class="how__image-wrapper">
-                        <img class="how__image how__image--md" src="images/e4-3-md.png" alt="">
-                        <img class="how__image how__image--xl" src="images/e4-3-xl.png" alt="">
+                        <picture>
+                            <source srcset="" media="(max-width: 500px">
+                            <source srcset="images/e4-3-md.png" media="(max-width: 1300px">
+                            <img class="how__image" src="images/e4-3-xl.png" alt="">
+                        </picture>
                     </div>
 
                 </div>
                 <div class="how__item how__item--indent">
                     <div class="how__image-wrapper">
-                        <img class="how__image how__image--md" src="images/e4-4-md.png" alt="">
-                        <img class="how__image how__image--xl" src="images/e4-4-xl.png" alt="">
+                        <picture>
+                            <source srcset="" media="(max-width: 500px">
+                            <source srcset="images/e4-4-md.png" media="(max-width: 1300px">
+                            <img class="how__image" src="images/e4-4-xl.png" alt="">
+                        </picture>
+
                     </div>
+<!--                    <div class="how__image-wrapper">
+                        <img class="how__image how__image&#45;&#45;big" src="images/e4-4-xl.png" alt="">
+                    </div>-->
                     <div class="how__content how__content--indent">
                         <h3 class="how__name how__name--indent">Стрейчинг</h3>
                         <div class="how__image-wrapper how__image-wrapper--small">
-                            <img class="how__image how__image--sm" src="images/e4-4-sm.png" alt="">
+                            <img class="how__image how__image--small" src="images/e4-4-sm.png" alt="">
                         </div>
                         <div class="how__text">В конце занятия выполняем специальные упражнения для развития гибкости,
                             снятия усталости, стресса и мышечного напряжения
