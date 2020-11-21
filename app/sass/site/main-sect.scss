@@ -5,7 +5,7 @@
   }
   &__container {
     position: relative;
-    //overflow-x: hidden;
+    @extend .container;
     &:before {
       content: '';
       position: absolute;

@@ -1,4 +1,9 @@
-.-container {
+.z-container {
+  max-width: $desktop-width;
+  margin: 0 auto;
+}
+
+.container {
   max-width: $desktop-width;
   margin: 0 auto;
 }
