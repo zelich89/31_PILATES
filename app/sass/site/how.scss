@@ -1,4 +1,7 @@
 .how {
+  &__wrap {
+    @extend .my-wrap;
+  }
   &__title {
     @extend .-title;
 
@@ -17,7 +20,7 @@
     &--indent {
       padding-bottom: 90px;
       @media (max-width: $desktop-width) {
-        padding-bottom: 70px;
+        padding-bottom: 71px;
       }
       @media (max-width: $tablet-width) {
         padding-bottom: 60px;
@@ -26,24 +29,42 @@
   }
   &__item {
     display: flex;
-    //height: 570px;
+    position: relative;
+    height: 500px;
     @media (max-width: $desktop-width) {
-      //height: 300px;
+      height: 400px;
     }
-    //border: 1px solid rebeccapurple;
+    @media (max-width: $tablet-width) {
+      height: auto;
+    }
     &--indent {
+      margin-left: 90px;
       padding-bottom: 85px;
+      //padding-left: 90px;
       @media (max-width: $desktop-width) {
-        //padding-bottom: 70px;
-        //padding-left: 50px;
+        margin-left: 45px;
          }
       @media (max-width: $tablet-width) {
-        //margin-bottom: 70px;&
+        margin: 0 15px;
       }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+    &:nth-child(odd) {
+      justify-content: flex-start;
+      @media (max-width: $desktop-width) {
+
+      }
+      @media (max-width: $tablet-width) {
+      }
+    }
+    &:nth-child(even) {
+      justify-content: flex-end;
     }
   }
   &__content {
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -52,12 +73,15 @@
       text-align: center;
     }
     &--indent {
-      padding-left: 90px;
+      //padding-left: 90px;
+      &:nth-child(even) {
+        padding-left: 0;
+      }
       @media (max-width: $desktop-width) {
-        padding-left: 50px;
+        //padding-left: 50px;
       }
       @media (max-width: $tablet-width) {
-        padding-left: 0;
+        //padding-left: 0;
       }
     }
   }
@@ -83,94 +107,30 @@
     }
   }
   &__image-wrapper {
+    pointer-events: none;
     padding-left: 20px;
-    position: relative;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    &:nth-child(odd) {
-      &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 462px;
-        height: 462px;
-        border-radius: 50%;
-        border: 45px solid rgba($primary, .5);
-        transform: translate(-50%,-40%);
-        @media (max-width: $desktop-width) {
-          width: 236px;
-          height: 236px;
-        }
-      }
-    }
-    &:nth-child(even) {
-      &:before {
-        z-index: 1;
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 372px;
-        height: 372px;
-        border-radius: 50%;
-        background-color: rgba($primary, .5);
-        transform: translate(-50%,-40%);
-        @media (max-width: $desktop-width) {
-          width: 195px;
-          height: 195px;
-        }
-      }
-      &:after {
-        z-index: 1;
-        content: '';
-        background-image: url(../../images/decor-dots-xl.png);
-        background-repeat: no-repeat;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        width: 140px;
-        height: 140px;
-        transform: translate(-25%, -75%);
-        @media (max-width: $desktop-width) {
-          background-image: url(../../images/decor-dots-md.png);
-          width: 70px;
-          height: 70px;
-          transform: translate(-25%, -100%);
-        }
-      }
-    }
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    right: 90px;
     @media (max-width: $tablet-width) {
-      display: none;
+      position: static;
+      transform: translateY(0);
     }
-    &--small {
-      display: none;
-      @media (max-width: $tablet-width) {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-      }
+    &--left {
+     left: 0;
+   }
+    &:nth-child(even) {
     }
     &--indent {
-      margin-top: -115px;
-      @media (max-width: $desktop-width) {
-        margin-top: -65px;
+      @media (max-width: $tablet-width) {
+        margin-bottom: 20px;
       }
     }
   }
   &__image {
-    position: relative;
-    z-index: 2;
-    max-width: 100%;
+    pointer-events: auto;
     @media (max-width: $tablet-width) {
-    }
-
-    &--small {
-      display: none;
-      @media (max-width: $tablet-width) {
-        display: block;
-      }
     }
 
   }

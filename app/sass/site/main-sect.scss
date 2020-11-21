@@ -25,6 +25,7 @@
     }
   }
   &__wrap {
+    @extend .my-wrap;
     display: flex;
     position: relative;
   }
@@ -35,9 +36,9 @@
       @media (max-width: $desktop-width) {
         padding: 80px 0 190px;
       }
-/*      @media (max-width: $tablet-width) {
-        padding: 80px 0 190px;
-      }*/
+      @media (max-width: $tablet-width) {
+        padding: 80px 0 170px;
+      }
     }
   }
   &__title {
@@ -66,10 +67,10 @@
   &__photo-wrapper {
     pointer-events: none;
     position: absolute;
-    top: -40px;
+    bottom: 0;
     right: -100px;
     @media (max-width: $desktop-width) {
-      top: 0;
+      //top: 0;
       right: -160px;
     }
     @media (max-width: $tablet-width) {
@@ -78,6 +79,7 @@
     }
   }
   &__photo {
+    pointer-events: auto;
     height: 776px;
     @media (max-width: $desktop-width) {
       height: 630px;

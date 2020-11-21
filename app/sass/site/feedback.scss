@@ -1,4 +1,7 @@
 .feedback {
+  &__wrap {
+    //@extend .my-wrap;
+  }
   &__title {
     @extend .-title;
 

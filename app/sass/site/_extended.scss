@@ -3,7 +3,20 @@
   margin: 0 auto;
 }
 
-.-wrap {
+.my-wrap {
+  margin: 0 auto;
+  max-width: 1160px;
+  padding: 0 10px;
+  @media (max-width: $desktop-width) {
+    width: 640px;
+  }
+  @media (max-width: $tablet-width) {
+    width: 290px;
+    padding: 0;
+  }
+}
+
+.s-wrap {
   margin: 0 auto;
   max-width: 1160px;
   padding: 0 10px;

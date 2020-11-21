@@ -25,7 +25,7 @@
     }
   }
   &__wrap {
-    @extend .-wrap;
+    @extend .my-wrap;
     padding-top: 35px;
     display: flex;
     align-items: center;

@@ -1,6 +1,9 @@
 .cost {
   counter-reset: count;
   position: relative;
+  &__wrap {
+    @extend .my-wrap;
+  }
   &__title {
     @extend .-title;
 

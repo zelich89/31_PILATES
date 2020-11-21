@@ -3,6 +3,7 @@
   }
 
   &__wrap {
+    @extend .my-wrap;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -180,7 +181,7 @@
     }
   }
   &--indent {
-    padding-bottom: 200px;
+    padding-bottom: 180px;
     @media (max-width: $desktop-width) {
       padding-bottom: 90px;
     }

@@ -1,6 +1,9 @@
 .contacts {
-  &__wrap {
+  &__container {
     position: relative;
+  }
+  &__wrap {
+    @extend .my-wrap;
   }
 
   &__title {
@@ -21,8 +24,8 @@
   }
   &__address {
     position: absolute;
-    top: 100%;
-    left: 10px;
+    top: 30px;
+    left: 10%;
     width: 310px;
     //height: 365px;
     background-color:$primary;
@@ -37,7 +40,8 @@
       width: auto;
       background: transparent;
       margin-top: 0;
-      padding: 0 0 20px 0;
+      //margin-bottom: 20px;
+      padding: 0 0 40px 0;
     }
   }
   &__name {
