@@ -1,0 +1,105 @@
+.how2 {
+  &__wrap {
+    @extend .my-wrap;
+  }
+
+  &__title {
+    @extend .-title;
+
+    &--indent {
+      margin-bottom: 60px;
+      @media (max-width: $desktop-width) {
+        margin-bottom: 40px;
+      }
+      @media (max-width: $tablet-width) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+
+  &__items {
+
+    &--indent {
+      padding-bottom: 80px;
+      @media (max-width: $desktop-width) {
+        padding-bottom: 65px;
+      }
+      @media (max-width: $tablet-width) {
+        padding-bottom: 50px;
+      }
+    }
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(12, auto);
+    &:first-child {
+      margin-top: -110px;
+      margin-bottom: -50px;
+      @media (max-width: $desktop-width) {
+        margin-top: -50px;
+        margin-bottom: -50px;
+      }
+    }
+    &:nth-child(n+2) {
+      margin-bottom: 110px;
+      @media (max-width: $desktop-width) {
+        margin-bottom: 70px;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    @media (max-width: $tablet-width) {
+      margin-top: 0;
+    }
+  }
+
+  &__name {
+    grid-row: 6/7;
+    grid-column: 1/2;
+    @include font-Roboto(28px, 36px, 400);
+    @media (max-width: $desktop-width) {
+      @include font-Roboto(18px, 24px, 400);
+    }
+    @media (max-width: $tablet-width) {
+      @include font-Roboto(14px, 18px, 400);
+    }
+    &--indent {
+      padding-bottom: 25px;
+    }
+  }
+
+  &__image-zone {
+    grid-row: 1/-1;
+    grid-column: 2/-1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    grid-row: 7/8;
+    grid-column: 1/2;
+    @include font-SFUI(16px, 24px, 300);
+    @media (max-width: $tablet-width) {
+      @include font-SFUI(14px, 21px, 300);
+    }
+  }
+
+  &__item--reverse {
+    .how2__name {
+      grid-column: 2/-1;
+    }
+
+    .how2__image-zone {
+      grid-column: 1/2;
+    }
+
+    .how2__text {
+      grid-column: 2/-1;
+    }
+
+  }
+}
